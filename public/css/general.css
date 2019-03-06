@@ -1,0 +1,20 @@
+.home-card .box {
+    
+    padding: 20px;
+    text-align: center;
+    background:#f2f2f2;
+    margin: 2px 0;
+    width: 100%;
+}
+.home-card .card-body ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; 
+}
+.home-card .hr {
+    width: 100%;
+    height: 1px;
+    background: rgb(215, 215, 215);
+    display: block;
+    margin: 15px 0;
+}
