@@ -14,12 +14,12 @@
             @csrf
             <div class='form-group'>
                 <label for='titleLabel'>Titre</label>
-                <input type='text' name='title' value='{{ $books->title }}' id='titleLabel' class='form-control'>
+                <input required type='text' name='title' value='{{ $books->title }}' id='titleLabel' class='form-control'>
             </div>
 
             <div class='form-group'>
                 <label for='resumeLabel'>Resume</label>
-                <textarea name='resume' id='resumeLabel' class='form-control'>{{$books->resume }}</textarea>
+                <textarea required name='resume' id='resumeLabel' class='form-control'>{{$books->resume }}</textarea>
             </div>
 
             <div class='form-group'>
@@ -54,13 +54,13 @@
 
             <div class='form-group'>
                 <label for='priceLabel'>Prix</label>
-                <input type='number' step="0.10" name='price' value='{{ $books->price }}' id='priceLabel' class='form-control'>
+                <input type='number' step="0.10" name='price' placeholder="€" value='{{ $books->price }}' id='priceLabel' class='form-control'>
 
             </div>
 
             <div class='form-group'>
                 <label for='stockLabel'>Quantité</label>
-                <input type='number' name='stock' value='{{ $books->stock }}'id='stockLabel' class='form-control'>
+                <input required type='number' name='stock' value='{{ $books->stock }}'id='stockLabel' class='form-control'>
             </div>
             <input type='hidden' name='id' value='{{ $books->id }}'>
             <input type='submit' value='Mettre à jour' class='btn btn-primary'>

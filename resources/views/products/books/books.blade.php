@@ -72,13 +72,12 @@
                 </td>
             </tr>
             <tr class='collapse' id='manageStock_{{$book->id}}'>
-
                 <td class="align-middle" colspan="7">
                     <form action='update-book-stock' method='POST'>
                         @csrf
                         <div class='row'>
                             <div class='form-group col-3'>
-                                <input type='number' class='form-control' placeholder='Quantité à ajouter ou retirer' name='ch-stock'>
+                                <input required type='number' class='form-control' placeholder='Quantité à ajouter ou retirer' name='ch-stock'>
                             </div>
 
                             <div class='form-group col-3'>
