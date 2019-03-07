@@ -12,11 +12,11 @@
                 @csrf
                     <div class='form-group'>
                         <label for='firstLabel'>Prenom</label>
-                        <input id='firstLabel' type='text' name='firstname' class='form-control'>
+                        <input required id='firstLabel' type='text' name='firstname' class='form-control'>
                     </div>
                     <div class='form-group'>
                         <label for='lastLabel'>Nom</label>
-                        <input id='lastLabel' type='text' name='lastname' class='form-control'>
+                        <input required id='lastLabel' type='text' name='lastname' class='form-control'>
                     </div>
                     <input type='submit' value='Ajouter' class='btn btn-primary'>
                 </form>

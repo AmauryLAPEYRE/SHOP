@@ -24,36 +24,7 @@ class ViewController extends Controller
 
     public function index()
     {
-        $books = Book::all();
-        $games = Game::all();
-        $totalGameStock = 0;
-        $totalBookStock = 0;
-        $totalGamePrice = 0;
-        $totalBookPrice = 0;
-        $emptyGameStock = [];
-        $emptyBookStock = [];
-        foreach ($games as $game) {
-            $totalGameStock = $game->stock + $totalGameStock;
-            $totalGamePrice = $game->price * $game->stock + $totalGamePrice;
-            if($game->stock <= 0)
-            {
-                array_push($emptyGameStock, $game->title);
-            }
-        }
-        foreach ($books as $book) {
-            $totalBookStock = $book->stock + $totalBookStock;
-            $totalBookPrice = $book->price * $book->stock + $totalBookPrice;
-            if($book->stock <= 0)
-            {
-                array_push($emptyBookStock, $book->title);
-            }
-        }
-        return view('home', [
-            'totalGameStock' => $totalGameStock,
-            'totalBookStock' => $totalBookStock,
-            'totalGamePrice' => $totalGamePrice,
-            'totalBookPrice' => $totalBookPrice,
-        ]);
+        return view('home');
     }
     public function users()
     {

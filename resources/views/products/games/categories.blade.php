@@ -13,7 +13,7 @@
                 @csrf
                     <div class='form-group'>
                         <label for='nameLabel'>Nom</label>
-                        <input id='nameLabel' type='text' name='name' class='form-control'>
+                        <input required id='nameLabel' type='text' name='name' class='form-control'>
                     </div>
                     <input type='submit' value='Ajouter' class='btn btn-primary'>
                 </form>

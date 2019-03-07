@@ -11,12 +11,12 @@
 
     <div class='form-group'>
         <label for='titleLabel'>Titre</label>
-        <input id='titleLabel' type='text' name='title' class='form-control'>
+        <input required id='titleLabel' type='text' name='title' class='form-control'>
     </div>
 
     <div class='form-group'>
         <label for='descriptionLabel'>Description</label>
-        <textarea id='descriptionLabel' name='description' class='form-control'></textarea>
+        <textarea required id='descriptionLabel' name='description' class='form-control'></textarea>
     </div>
 
     <div class='form-group'>
@@ -31,12 +31,12 @@
     <div class='row'>
         <div class='form-group col-6'>
             <label for='priceLabel'>Prix</label>
-            <input id='priceLabel' type='number' step="0.01" name='price' class='form-control'>
+            <input required id='priceLabel' type='number' step="0.10" placeholder="€" name='price' class='form-control'>
         </div>
 
         <div class='form-group col-6'>
             <label for='stockLabel'>Quantité</label>
-            <input id='stockLabel' type='number' name='stock' class='form-control'>
+            <input required id='stockLabel' type='number' name='stock' class='form-control'>
         </div>
     </div>
     <input type='submit' value='Ajouter le jeu' class='btn btn-primary'>
